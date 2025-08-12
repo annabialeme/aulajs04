@@ -6,8 +6,40 @@
   margin: 2rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: box-shadow 0.2s;
+  flex: 1 1 300px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.headerGradient {
+  background: linear-gradient(90deg, #7b2ff2, #8f5cff, #3c1053, #a4508b);
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cardsRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch; 
+}
+
+.cardHighlight {
+  background: linear-gradient(90deg, #ede9fe 0%, #f3e8ff 100%);
+  border-left: 8px solid #a78bfa;
+  border-radius: 0.75rem;
+  padding: 2rem 2rem 2rem 2.5rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(123, 47, 242, 0.07);
+  font-size: 1.1rem;
 }
