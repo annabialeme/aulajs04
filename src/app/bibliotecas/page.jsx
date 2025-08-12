@@ -4,7 +4,7 @@ import styles from "./Bibliotecas.module.css";
 export default function Bibliotecas() {
   return (
     <div>
-      <header>
+      <header className={styles.headerGradient}>
         <h1>O que é Tailwind CSS?</h1>
         <h5>Framework CSS utilitário para criar interfaces incríveis com rapidez e consistência.</h5>
       </header>
