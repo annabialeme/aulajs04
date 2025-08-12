@@ -1,3 +1,11 @@
+import Link from "next/link";
+
 export default function Home() {
-  return null;
+  return (
+    <main>
+      <Link href="/bibliotecas">
+        <button>Ir para Bibliotecas</button>
+      </Link>
+    </main>
+  );
 }
