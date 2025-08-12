@@ -1,5 +1,11 @@
-import Bibliotecas from "./bibliotecas/page";
+import Link from "next/link";
 
 export default function Home() {
-  return <Bibliotecas />;
+  return (
+    <main>
+      <Link href="/bibliotecas">
+        <button>Ir para Bibliotecas</button>
+      </Link>
+    </main>
+  );
 }
