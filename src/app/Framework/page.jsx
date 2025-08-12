@@ -82,6 +82,15 @@ export default function Page() {
           <p>Alguns frameworks facilitam a criação de testes automatizados para garantir a qualidade do código. </p>
           </div>   
 
+            <div className={styles.card}>
+            <h2>Uso no mercado e oportunidades:</h2>
+            <h3>Aumento da produtividade:</h3>
+            <p>Frameworks fornecem funcionalidades prontas, reduzindo o tempo de desenvolvimento e aumentando a eficiência da equipe. </p>
+            <h3>Segurança:</h3>
+            <p>Muitos frameworks seguem padrões de segurança e são revisados regularmente, minimizando vulnerabilidades. </p>
+            <h3>Manutenção facilitada:</h3>
+            <p>A estrutura organizada de um framework facilita a manutenção e evolução do código. </p>
+            </div>
 
           <div className={styles.card}>
             <h2>Oportunidades de mercado:</h2>  
