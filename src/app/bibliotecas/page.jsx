@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./bibliotecas.module.css";
+import styles from "./Bibliotecas.module.css";
 
 export default function Bibliotecas() {
   return (
     <div>
-      <header className={styles.headerGradient}>
+      <header>
         <h1>O que é Tailwind CSS?</h1>
         <h5>Framework CSS utilitário para criar interfaces incríveis com rapidez e consistência.</h5>
       </header>
@@ -89,3 +89,4 @@ export default function Bibliotecas() {
     </div>
   );
 }
+
