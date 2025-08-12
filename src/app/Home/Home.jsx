@@ -2,8 +2,11 @@
 import styles from "./Home.module.css";
 import { Card, Typography, Button } from "antd";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   const cardsData = [
     {
       image: "/images/thiago.jpeg",
@@ -59,37 +62,49 @@ export default function Home() {
 
   return (
     <div className={styles.backgroundGradient}>
-      {cardsData.map((card, index) => (
-        <Card hoverable className={styles.card} key={index}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={card.image}
-              alt={card.alt}
-              fill
-              className={styles.image}
-              priority
-            />
-          </div>
-          <Typography.Title level={3} style={{ textAlign: "center" }}>
-            {card.title}
-          </Typography.Title>
-          <Typography.Paragraph style={{ textAlign: "center" }}>
-            {card.subtitle}
-          </Typography.Paragraph>
-          <Typography.Paragraph style={{ textAlign: "center" }}>
-            {card.instructors}
-          </Typography.Paragraph>
-          <Typography.Paragraph style={{ textAlign: "center" }}>
-            {card.description}
-          </Typography.Paragraph>
-          <ul className={styles.text}>
-            <p>{card.details}</p>
-          </ul>
-          <Button type="primary" className={styles.customButton}>
-            Saiba Mais
-          </Button>
-        </Card>
-      ))}
+      <div className={styles.scrollContainer}>
+        {cardsData.map((card, index) => (
+          <Card hoverable className={styles.card} key={index}>
+            <div className={styles.imageContainer}>
+              <Image
+                src={card.image}
+                alt={card.alt}
+                fill
+                className={styles.image}
+                priority
+              />
+            </div>
+            <Typography.Title level={3} style={{ textAlign: "center" }}>
+              {card.title}
+            </Typography.Title>
+            <Typography.Paragraph style={{ textAlign: "center" }}>
+              {card.subtitle}
+            </Typography.Paragraph>
+            <Typography.Paragraph style={{ textAlign: "center" }}>
+              {card.instructors}
+            </Typography.Paragraph>
+            <Typography.Paragraph style={{ textAlign: "center" }}>
+              {card.description}
+            </Typography.Paragraph>
+            <ul className={styles.text}>
+              <p>{card.details}</p>
+            </ul>
+            <Button 
+              type="primary" 
+              className={styles.customButton}
+              onClick={() => {
+                if (index === 0) router.push('/bibliotecas');
+                else if (index === 1) router.push('/Framework');
+                else if (index === 2) router.push('/Meta-Framework');
+                else if (index === 3) router.push('/Meta-Framework');
+                else if (index === 4) router.push('/especiais');
+              }}
+            >
+              Saiba Mais
+            </Button>
+          </Card>
+        ))}
+      </div>
     </div>
   );
 }
