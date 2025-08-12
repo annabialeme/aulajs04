@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   const cardsData = [
     {
-      image: "/images/thiago.jpeg",
+      image: "/images/",
       alt: "Foto da Anna Beatriz Leme",
       title: "Anna Beatriz Leme",
       subtitle: "2TDS1",
@@ -36,7 +36,7 @@ export default function Home() {
         "Um meta-framework é uma camada de abstração sobre um framework existente, oferecendo funcionalidades adicionais e uma abordagem mais abrangente para o desenvolvimento de aplicações.",
     },
     {
-      image: "/images/nextjs.jpeg",
+      image: "/images/luana.jpg",
       alt: "Foto da Luana Domeneghetti",
       title: "Luana Domeneghetti",
       subtitle: "2TDS1",
@@ -46,7 +46,7 @@ export default function Home() {
         "Um meta-framework é uma camada de abstração sobre um framework existente, oferecendo funcionalidades adicionais e uma abordagem mais abrangente para o desenvolvimento de aplicações.",
     },
     {
-      image: "/images/mariafoto.jpeg",
+      image: "/images/mariaparma.jpeg",
       alt: "Foto da Maria",
       title: "Maria Eduarda Parma",
       subtitle: "2TDS1",
