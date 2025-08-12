@@ -1,3 +1,9 @@
+
+import Home from "../app/Home/Home";
+
+export default function Page() {
+  return <Home />;
+
 import Link from "next/link";
 
 export default function Home() {
@@ -8,4 +14,5 @@ export default function Home() {
       </Link>
     </main>
   );
+
 }
