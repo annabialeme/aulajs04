@@ -1,11 +1,5 @@
-import Link from "next/link";
+import Home from "../app/Home/Home";
 
-export default function Home() {
-  return (
-    <main>
-      <Link href="/bibliotecas">
-        <button>Ir para Bibliotecas</button>
-      </Link>
-    </main>
-  );
+export default function Page() {
+  return <Home />;
 }
