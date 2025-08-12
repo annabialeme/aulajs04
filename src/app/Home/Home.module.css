@@ -8,17 +8,45 @@
     left: 0;
     z-index: 0;
     background: linear-gradient(135deg, #6a11cb 0%, #b3a8c7 100%);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto; 
+    padding: 20px 0;
+    overflow-x: hidden;
+}
+
+.scrollContainer {
+    display: flex;
     gap: 20px;
-    padding: 20px; 
-    justify-content: center; 
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: calc(100vh - 40px);
+    align-items: center;
+}
+
+.scrollContainer::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .card {
-    width: 100%; 
-    max-width: 420px; 
+    width: 380px;
+    min-width: 380px;
+    max-width: 380px;
+    height: auto;
     padding: 40px 36px 32px 36px;
     background-color: #fff;
     display: flex;
@@ -32,6 +60,12 @@
     border: 1.5px solid #e3e6f0;
     transition: box-shadow 0.3s, transform 0.3s;
     cursor: pointer;
+    flex-shrink: 0;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(106, 17, 203, 0.2), 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .imageContainer {
@@ -90,8 +124,22 @@
 }
 
 
-@media (max-width: 1280px) {
-    .backgroundGradient {
-        grid-template-columns: repeat(2, 1fr); 
+@media (max-width: 768px) {
+    .scrollContainer {
+        padding: 10px;
+        gap: 15px;
+    }
+    
+    .card {
+        width: 320px;
+        min-width: 320px;
+        max-width: 320px;
+        padding: 30px 24px 24px 24px;
+    }
+    
+    .imageContainer {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 16px auto;
     }
 }
