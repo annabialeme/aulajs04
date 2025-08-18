@@ -29,7 +29,7 @@ export default function Home() {
         "Em desenvolvimento de software, um framework (ou estrutura) é um conjunto de ferramentas, bibliotecas e regras reutilizáveis que fornecem uma base para a construção de aplicações.",
     },
     {
-      image: "/images/react.jpeg",
+      image: "/images/beatriz.jpg",
       alt: "Foto da Beatriz Lima",
       title: "Beatriz Lima",
       subtitle: "2TDS1",
