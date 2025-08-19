@@ -36,7 +36,7 @@ export default function Home() {
       instructors: "Instrutores Thiago Ferreira e Marcelo Carboni",
       description: "Mini Wiki Tech",
       details:
-        "Um meta-framework é uma camada de abstração sobre um framework existente, oferecendo funcionalidades adicionais e uma abordagem mais abrangente para o desenvolvimento de aplicações.",
+        "No Next.js, page.js mostra a rota, layout.js organiza a estrutura, loading.js indica carregamento, error.js trata erros locais, global-error.js erros gerais e not-found.js exibe 404.",
     },
     {
       image: "/images/luana.jpg",
