@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
 import styles from "./Bibliotecas.module.css";
+import Header from '../.././components/header';
 
 export default function Bibliotecas() {
   return (
     <>
+    <Header /> 
+
       <header className={styles.headerGradient}>
         <h1 className={styles.tituloAnimado}>O que é Tailwind CSS?</h1>
         <h5 className={styles.subtituloAnimado}>

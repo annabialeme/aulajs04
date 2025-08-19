@@ -1,9 +1,13 @@
 "use client";
 import React from "react";
 import styles from "./Framework.module.css";
+import Header from '../.././components/header';
 
 export default function Page() {
   return (
+    <>
+    <Header /> 
+    
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Framework Page</h1>
@@ -107,5 +111,6 @@ export default function Page() {
         <li> Framework React e o Meta-Framework Next.js.</li>
       </div>
     </div>
+    </>
   );
 }       
