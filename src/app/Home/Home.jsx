@@ -94,9 +94,9 @@ export default function Home() {
               className={styles.customButton}
               onClick={() => {
                 if (index === 0) router.push('/bibliotecas');
-                else if (index === 1) router.push('/Framework');
-                else if (index === 2) router.push('/Meta-Framework');
-                else if (index === 3) router.push('/Meta-Framework');
+                else if (index === 1) router.push('/Meta-Framework');
+                else if (index === 2) router.push('/especiais');
+                else if (index === 3) router.push('/Framework');
                 else if (index === 4) router.push('/Nextjs15');
               }}
             >
