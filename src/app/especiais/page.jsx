@@ -2,8 +2,13 @@
 import React from "react";
 import styles from "./ArquivosEspeciais.module.css";
 
+import Header from '../.././components/header';
+
 export default function Page() {
   return (
+    <>
+    <Header />  
+
     <div className={styles.container}>
       <div className={styles.header}>
         <h1>Arquivos especiais do App Router e raiz do projeto</h1>
@@ -103,5 +108,6 @@ export default function Page() {
         </ul>
       </div>
     </div>
+    </>
   );
 }       

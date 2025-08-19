@@ -12,7 +12,6 @@
 .header {
     max-width: 900px;
     text-align: center;
-    background-color: #b3a8c7;
 }
 
 .header h1 {
@@ -33,25 +32,37 @@
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 40px rgba(106, 17, 203, 0.2),
-              0 4px 16px rgba(0,0,0,0.1);
+            0 4px 16px rgba(0,0,0,0.1);
 }
 
 .card h2 {
-    font-size: 1.4rem;
+    font-size: 2.35rem;
     color: #6a11cb;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #7f18ee96;
 }
 
 .card h3 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #7f18ee;
 }
 
-.card p{
-    font-size: 1rem;
+.card p {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.card ul {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+.card ul li::marker {
+    color: #7f18ee; 
 }
