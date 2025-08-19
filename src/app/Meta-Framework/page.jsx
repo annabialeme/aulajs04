@@ -1,9 +1,13 @@
 "use client"
 import React from "react"
 import styles from "./MetaFramework.module.css"
+import Header from '../.././components/header';
 
 export default function Page() {
   return (
+    <>
+    <Header />  
+    
     <div className={styles.container}>
         <div className={styles.header}>
             <h1 className={styles.titleheader}>Mini Wiki Tech + Pesquisa de Tecnologias</h1>
@@ -95,4 +99,5 @@ export default function Page() {
             </div>
         </div>
     </div>
+    </>
   )}

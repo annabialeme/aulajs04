@@ -1,9 +1,13 @@
+"use client"
 import React from "react";
 import styles from "./Next15.module.css";
+import Header from '../.././components/header';
 
 export default function Next() {
   return (
     <>
+    <Header /> 
+    
       <header className={styles.headerGradient}>
         <h1 className={styles.tituloAnimado}>O que é Next.js 15?</h1>
       </header>
