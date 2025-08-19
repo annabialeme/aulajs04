@@ -9,7 +9,7 @@ export default function Home() {
 
   const cardsData = [
     {
-      image: "/images/",
+      image: "/images/annaleme.jpeg",
       alt: "Foto da Anna Beatriz Leme",
       title: "Anna Beatriz Leme",
       subtitle: "2TDS1",
@@ -19,7 +19,7 @@ export default function Home() {
         "Em design e desenvolvimento web, uma biblioteca de estilos é uma coleção de regras CSS pré-definidas que facilitam a estilização consistente de elementos em um site ou aplicação",
     },
     {
-      image: "/images/marcelo.jpeg",
+      image: "/images/annavalentim.jpg",
       alt: "Foto da Anna Beatriz Valentim",
       title: "Anna Beatriz Valentim",
       subtitle: "2TDS1",
@@ -97,7 +97,7 @@ export default function Home() {
                 else if (index === 1) router.push('/Framework');
                 else if (index === 2) router.push('/Meta-Framework');
                 else if (index === 3) router.push('/Meta-Framework');
-                else if (index === 4) router.push('/especiais');
+                else if (index === 4) router.push('/Nextjs15');
               }}
             >
               Saiba Mais
